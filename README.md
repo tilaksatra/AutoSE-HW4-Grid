@@ -3,16 +3,16 @@
  
  # `Lua to Python - AutoSE HW4 - Grid`
 
-![license](https://img.shields.io/github/license/amisha-w/AutoSE-HW2-Data)
-![Repo Size](https://img.shields.io/github/repo-size/amisha-w/AutoSE-HW2-Data)
-![Issues](https://img.shields.io/github/issues-closed-raw/amisha-w/AutoSE-HW2-Data?color=yellow)
-![Release](https://img.shields.io/github/v/release/amisha-w/AutoSE-HW2-Data?color=green)
-![Contributors](https://img.shields.io/github/contributors/amisha-w/AutoSE-HW2-Data?color=cyan)
-![PR](https://img.shields.io/github/issues-pr/amisha-w/AutoSE-HW2-Data?color=red)
-![PR Closed](https://img.shields.io/github/issues-pr-closed-raw/amisha-w/AutoSE-HW2-Data?color=red)
-![Pylint](https://img.shields.io/github/actions/workflow/status/amisha-w/AutoSE-HW2-Data/pylint.yml?label=PyLint)
-![Python Style Checker](https://img.shields.io/github/actions/workflow/status/amisha-w/AutoSE-HW2-Data/style_checker.yml?label=Python%20Style%20Checker)
-![Commit Activity](https://img.shields.io/github/commit-activity/w/amisha-w/AutoSE-HW2-Data?color=blue)
+![license](https://img.shields.io/github/license/tilaksatra/AutoSE-HW4-Grid)
+![Repo Size](https://img.shields.io/github/repo-size/tilaksatra/AutoSE-HW4-Grid)
+![Issues](https://img.shields.io/github/issues-closed-raw/tilaksatra/AutoSE-HW4-Grid?color=yellow)
+![Release](https://img.shields.io/github/v/release/tilaksatra/AutoSE-HW4-Grid?color=green)
+![Contributors](https://img.shields.io/github/contributors/tilaksatra/AutoSE-HW4-Grid?color=cyan)
+![PR](https://img.shields.io/github/issues-pr/tilaksatra/AutoSE-HW4-Grid?color=red)
+![PR Closed](https://img.shields.io/github/issues-pr-closed-raw/tilaksatra/AutoSE-HW4-Grid?color=red)
+![Pylint](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/pylint.yml?label=PyLint)
+![Python Style Checker](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/style_checker.yml?label=Python%20Style%20Checker)
+![Commit Activity](https://img.shields.io/github/commit-activity/w/tilaksatra/AutoSE-HW4-Grid?color=blue)
 
 </div>
 This project translates a Lua application to Python application complete with CI/CD pipeline and demonstrates Test-Driven development. It is a homework repository for CSC 591 course. 
