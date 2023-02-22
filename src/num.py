@@ -1,5 +1,4 @@
 import math
-from utils import rnd
 
 class Num:
 
@@ -39,6 +38,10 @@ class Num:
         '''
         return self.mu
 
+    def norm(self, n):
+        return n if n == "?" else (n - self.lo)/(self.hi - self.lo + math.exp(-32))
+
+
     def div(self):
         '''
         Method for calculating Standard Deviation
@@ -52,5 +55,20 @@ class Num:
         if x == '?':
             return x
         else:
-            return rnd(x,n)
+            mult = math.pow(10, n)
+            return math.floor(x * mult + 0.5)/mult
+
+    def dist(self, n1, n2):
+        '''
+        Method to calculate distance
+        '''
+
+        if n1=="?" and n2=="?":
+            return 1
+
+        n1,n2=self.norm(n1), self.norm(n2)
+
+        if(n1=="?"): n1 = 1 if n2<0.5 else 0
+        if(n2=="?"): n2 = 1 if n1<0.5 else 0
+        return abs(n1 - n2)
 

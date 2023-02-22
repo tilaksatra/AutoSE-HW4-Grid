@@ -2,11 +2,11 @@ import math
 import re
 import sys
 import io
-import copy
+import copy as copyy
 import json
 from data import DATA
 
-sys.path.append("./src")
+sys.path.append("../src")
 from constants import *
 
 seed = 937162211
@@ -68,9 +68,14 @@ def repPlace(data):
 
 def dofile(file):
     with open(file, 'r', encoding = 'utf-8') as f:
-        file_text = file.read()
-        text  = re.findall(r'(?<=return )[^.]*', file_text)[0]
-        text = text.replace('{', '[').replace('}',']').replace('=',':').replace('[\n','{\n' ).replace(' ]',' }' ).replace('\'', '"').replace('_', '"_"')
+
+
+        text = re.findall(r'(return\s+[^.]+)',  f.read())[0]
+        replacements = {'return ' : '', '{' : '[', '}' : ']','=':':', '[\n':'{\n', '\n]':'\n}', '_':'"_"', '\'':'"'}
+        for a,b in replacements.items():
+            text = text.replace(a, b)
+        # print("text1: \n",text1)
+
         text = re.sub("(\w+):",r'"\1":', text)
         return json.loads(text)
 
@@ -123,6 +128,9 @@ def many(t, n):
     for index in range(1, n + 1):
         arr.append(any(t))
     return arr
+
+def any(t):
+    return t[rint(0, len(t) - 1)]
 
 
 # map method 'fun'(k,v) over list (skip nil results)
@@ -177,7 +185,7 @@ def csv(filename, fun):
             return f.close()
 
 def copy(t):
-    return copy.deepcopy(t)
+    return copyy.deepcopy(t)
 
 def oo(t):
     return t

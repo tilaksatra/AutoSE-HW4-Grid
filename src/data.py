@@ -1,6 +1,6 @@
 import copy
 import math
-from utils import *
+import utils
 from rows import Row
 from cols import Col
 from constants import options
@@ -12,7 +12,7 @@ class DATA:
         self.cols = None
 
         if type(src) == str:
-            csv(src, self.add)
+            utils.csv(src, self.add)
         else:
             for t in src:
                 self.add(t)
@@ -43,17 +43,20 @@ class DATA:
                 val = col.div()
             return col.rnd(val, nPlaces), col.txt
 
-        return kap(cols or self.cols.y, fun)
+        return utils.kap(cols or self.cols.y, fun)
 
     def dist(self, row1, row2, cols=None):
+       
+        print("__")
         n, d = 0, 0
         c = cols or self.cols.x
-
+        print(cols,self.cols.x)
+        print(row1,row2,c)
         for col in c:
             n += 1
             d += col.dist(row1.cells[col.at], row2.cells[col.at]) ** options['p']
 
-        return (d / n) ** (1 / options['p'])
+        return (d/n) ** (1 / options['p'])
 
     def around(self, row1, rows=None, cols=None):
 
@@ -78,33 +81,43 @@ class DATA:
         def dist(row1, row2):
             return self.dist(row1, row2, cols)
 
-        def project(row):
-            return {"row": row, "dist": cosine(dist(row, A), dist(row, B), c)}
-
         if rows is None: rows = self.rows
-        some = many(rows, options['Sample'])
-        A = above or any(some)
-        B = self.around(A, some)[int(options['Far'] * len(rows))]['row']
+        A = above or utils.any(rows)
+        B = self.furthest(A, rows)['row']
+
         c = dist(A, B)
         left, right, mid = [], [], None
-        for n, tmp in enumerate(sorted(list(map(project, rows)), key=lambda x: x["dist"])):
-            if n <= len(rows) / 2:
-                left.append(tmp["row"])
-                mid = tmp["row"]
+        def project(row):
+            x,y = utils.cosine(dist(row,A), dist(row,B), c)
+            try:
+                row.x = row.x
+                row.y = row.y
+            except:
+                row.x = x
+                row.y = y
+            return (row, x, y)
+        new_rows = list()
+        for row in rows:
+            new_rows.append(project(row))
+        new_rows = sorted(new_rows, key = lambda x:x[1])
+
+        for n,temp in enumerate(new_rows) :
+            if n <len(new_rows)//2 :
+                left.append(temp[0])
+                mid = temp[0]
             else:
-                right.append(tmp["row"])
+                right.append(temp[0])
+        
         return left, right, A, B, mid, c
 
     def cluster(self, rows=None, min=None, cols=None, above=None):
         if rows is None: rows = self.rows
-        min = min or len(rows) ** options['min']
         cols = cols or self.cols.x
         node = {"data": self.clone(rows)}
-        if len(rows) > 2 * min:
-            left, right, node['A'], node['B'], node['mid'], _ = self.half(rows, cols, above)
-            node['left'] = self.cluster(left, min, cols, node['A'])
-            node['right'] = self.cluster(right, min, cols, node['B'])
-
+        if len(rows) >= 2:
+            left, right, node["A"], node["B"], node["mid"], node["c"] = self.half(rows,cols,above)
+            node["left"]  = self.cluster(left, cols, node["A"])
+            node["right"] = self.cluster(right, cols, node["B"])
         return node
 
     def furthest(self, row1, rows=None, cols=None):
