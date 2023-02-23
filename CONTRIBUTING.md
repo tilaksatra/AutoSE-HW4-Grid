@@ -1,6 +1,6 @@
 # Contributing to the Repository
 
-The following is a set of guidelines for contributing to PackTravel.
+The following is a set of guidelines for contributing to AutoSE-HW4-Grid
 
 ## Code of Conduct
 
