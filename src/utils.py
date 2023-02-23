@@ -6,7 +6,7 @@ import copy as copyy
 import json
 from data import DATA
 
-sys.path.append("../src")
+sys.path.append("./src")
 from constants import *
 
 seed = 937162211
@@ -39,7 +39,6 @@ def repRows(t, rows):
             from pprint import pprint
         
     for i in DATA(rows).rows: pprint(vars(i))
-    # print("#####DATA ROWS:  ", )
     return  DATA(rows)
 
 def repgrid(file):
@@ -82,7 +81,6 @@ def dofile(file):
         replacements = {'return ' : '', '{' : '[', '}' : ']','=':':', '[\n':'{\n', '\n]':'\n}', '_':'"_"', '\'':'"'}
         for a,b in replacements.items():
             text = text.replace(a, b)
-        # print("text1: \n",text1)
 
         text = re.sub("(\w+):",r'"\1":', text)
         return json.loads(text)
