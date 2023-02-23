@@ -46,12 +46,16 @@ class DATA:
         return utils.kap(cols or self.cols.y, fun)
 
     def dist(self, row1, row2, cols=None):
-       
-        print("__")
         n, d = 0, 0
+        if(type(cols)!=list):
+            cols = None
         c = cols or self.cols.x
-        print(cols,self.cols.x)
-        print(row1,row2,c)
+        
+        # print("__")
+        
+        # print(cols,self.cols.x)
+        # print(row1,row2,c)
+
         for col in c:
             n += 1
             d += col.dist(row1.cells[col.at], row2.cells[col.at]) ** options['p']
