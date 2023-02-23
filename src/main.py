@@ -36,7 +36,6 @@ def main(options, help, funs):
         print(help)
     else:
         for what, fun in funs.items():
-            # print("keywhat,fun)
             if options['go'] == 'all' or options['go'] == what:
                 print("--")
                 for k,v in saved.items():

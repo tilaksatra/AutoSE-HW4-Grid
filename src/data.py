@@ -47,14 +47,7 @@ class DATA:
 
     def dist(self, row1, row2, cols=None):
         n, d = 0, 0
-        if(type(cols)!=list):
-            cols = None
         c = cols or self.cols.x
-        
-        # print("__")
-        
-        # print(cols,self.cols.x)
-        # print(row1,row2,c)
 
         for col in c:
             n += 1
@@ -72,14 +65,7 @@ class DATA:
         mapped = map(function, rows)
         return sorted(mapped, key=lambda x: x["dist"])
 
-    def better(self, row1, row2):
-        s1, s2, ys, x, y = 0, 0, self.cols.y, None, None
-        for col in ys:
-            x = col.norm(row1.cells[col.at])
-            y = col.norm(row2.cells[col.at])
-            s1 -= math.exp(col.w * (x - y) / len(ys))
-            s2 -= math.exp(col.w * (y - x) / len(ys))
-        return s1 / len(ys) < s2 / len(ys)
+    
 
     def half(self, rows=None, cols=None, above=None):
         def dist(row1, row2):
@@ -114,14 +100,14 @@ class DATA:
         
         return left, right, A, B, mid, c
 
-    def cluster(self, rows=None, min=None, cols=None, above=None):
-        if rows is None: rows = self.rows
+    def cluster(self, rows = None , cols = None, above = None):
+        rows = rows or self.rows
         cols = cols or self.cols.x
-        node = {"data": self.clone(rows)}
+        node = { 'data' : self.clone(rows) }
         if len(rows) >= 2:
-            left, right, node["A"], node["B"], node["mid"], node["c"] = self.half(rows,cols,above)
-            node["left"]  = self.cluster(left, cols, node["A"])
-            node["right"] = self.cluster(right, cols, node["B"])
+            left, right, node['A'], node['B'], node['mid'], node['c'] = self.half(rows,cols,above)
+            node['left']  = self.cluster(left,  cols, node['A'])
+            node['right'] = self.cluster(right, cols, node['B'])
         return node
 
     def furthest(self, row1, rows=None, cols=None):

@@ -36,6 +36,10 @@ def repRows(t, rows):
         else:
             u=t["rows"][len(t["rows"])-n]
             row.append(u[len(u) - 1])
+            from pprint import pprint
+        
+    for i in DATA(rows).rows: pprint(vars(i))
+    # print("#####DATA ROWS:  ", )
     return  DATA(rows)
 
 def repgrid(file):
@@ -57,19 +61,18 @@ def repPlace(data):
     for r,row in enumerate(data.rows):
         c = chr(97+r).upper()
         print(c, row.cells[-1])
-
-        print("===",row.x,row.y)
-        print(type(row))
+        
         if( math.isnan(row.x) or math.isnan(row.y)):
             continue
         x=int(row.x*n/1)
         y=int(row.y*n/1)
-        maxy = max(maxy, y+1)
+        maxy = int(max(maxy, y+1))
         g[y+1][x+1] = c
     print("")
     for y in range(1,maxy+1):
         print(" ".join(g[y].values()))
 
+    
 
 def dofile(file):
     with open(file, 'r', encoding = 'utf-8') as f:
