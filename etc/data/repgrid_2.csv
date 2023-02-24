@@ -1,0 +1,20 @@
+local _ = " "
+return {
+    domain="dissementian platforms",
+    cols={   {'ChildrensBook',4, 5, 2, 4, 4, 4,'MatureBook'},
+             {'ShortBook', 3, 3, 4, 3, 3, 2, 'LongBook'},
+             {'LowRated',5, 5, 4, 4, 4, 3, 'HighRated'},
+             {'Non-Biography',4, 5, 4, 3, 5, 4, 'Biography'},
+             {'Fiction', 5, 5, 3, 3, 4, 4, 'Non-Fiction'},
+             {'LightWeight',  5, 5, 1, 2, 5, 3, 'Dark'},
+             {'Non-Series', 1, 5, 5, 5, 5, 1, 'Series'},
+             {'Historical', 4, 5, 3, 5, 5, 4, 'Non-Historical'},
+             {'OnlineCopy',  3, 2, 4, 1, 5, 5, 'PhysicalCopy'},
+             {'Old', 5, 5, 4, 3, 4, 3, 'Newly Published'}},
+rows={                      { _, _, _, _, _,'Rich Dad Poor Dad'},
+                            { _, _, _, _, 'Panchtantra'},
+                            { _, _, _, 'Two States'},
+                            { _, _,'Farenhiet 451'},
+                            { _,'Kane & Abel'},
+                            {'Indian Killer'}
+}
