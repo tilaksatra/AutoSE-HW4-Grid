@@ -39,7 +39,7 @@ def test_num():
 
 
 def test_repCols():
-    t = repCols(dofile(options['file'])['cols'])
+    t = repCols(dofile(options['file'])['cols'], DATA)
     for col in t.cols.all:
         oo(col)
     for row in t.rows:
@@ -48,7 +48,7 @@ def test_repCols():
 
 def test_repRows():
     t = dofile(options['file'])
-    rows = repRows(t, transpose(t['cols']))
+    rows = repRows(t, transpose(t['cols']), DATA)
     for col in rows.cols.all:
         oo(col)
     for row in rows.rows:
@@ -57,24 +57,24 @@ def test_repRows():
 
 def test_synonyms():
     data = DATA(options['file'])
-    show(repCols(dofile(options['file'])['cols']).cluster())
+    show(repCols(dofile(options['file'])['cols'], DATA).cluster())
 
 
 def test_prototypes():
     t = dofile(options['file'])
-    rows = repRows(t, transpose(t['cols']))
+    rows = repRows(t, transpose(t['cols']), DATA)
     show(rows.cluster(), "mid", rows.cols.all, 1)
 
 
 def test_position():
     t = dofile(options['file'])
-    rows = repRows(t, transpose(t['cols']))
+    rows = repRows(t, transpose(t['cols']), DATA)
     rows.cluster()
     repPlace(rows)
 
 
 def test_every():
-    repgrid(options['file'])
+    repgrid(options['file'], DATA)
 
 
 if __name__ == '__main__':

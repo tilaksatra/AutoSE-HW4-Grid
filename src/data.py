@@ -1,6 +1,5 @@
 import copy, sys
 sys.path.append("./src")
-import math
 import utils
 from rows import Row
 from cols import Col

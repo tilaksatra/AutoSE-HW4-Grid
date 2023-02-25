@@ -5,14 +5,13 @@ import sys
 import io
 import copy as copyy
 import json
-from data import DATA
 
 sys.path.append("./src")
 from constants import *
 
 seed = 937162211
 
-def repCols(cols):
+def repCols(cols, DATA):
     cols = copy(cols)
     for col in cols:
         col[len(col) - 1] = col[0] + ":" + col[len(col) - 1]
@@ -26,7 +25,7 @@ def repCols(cols):
     cols.insert(0, col1)
     return DATA(cols)
 
-def repRows(t, rows):
+def repRows(t, rows, DATA):
     rows = copy(rows)
     for j, s in enumerate(rows[-1]):
         rows[0][j] = str(rows[0][j]) + ":" + str(s)
@@ -42,10 +41,10 @@ def repRows(t, rows):
     for i in DATA(rows).rows: pprint(vars(i))
     return  DATA(rows)
 
-def repgrid(file):
+def repgrid(file, DATA):
     t = dofile(file)
-    rows = repRows(t, transpose(t['cols']))
-    cols = repCols(t['cols'])
+    rows = repRows(t, transpose(t['cols']), DATA)
+    cols = repCols(t['cols'], DATA)
     show(rows.cluster(),"mid",rows.cols.all,1)
     show(cols.cluster(),"mid",cols.cols.all,1)
     repPlace(rows)
