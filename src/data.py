@@ -1,12 +1,12 @@
 import copy
 import math
-import utils
 import sys
 
 sys.path.append("./src")
 from rows import *
 from cols import *
 from constants import *
+from utils import *
 
 
 class DATA:
