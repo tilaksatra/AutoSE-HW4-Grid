@@ -1,6 +1,8 @@
 import re
-from num import Num
-from sym import Sym
+
+sys.path.append("./src")
+from num import *
+from sym import *
 
 
 class Col:

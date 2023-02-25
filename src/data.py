@@ -1,9 +1,11 @@
 import copy
 import math
 import utils
-from rows import Row
-from cols import Col
-from constants import options
+
+sys.path.append("./src")
+from rows import *
+from cols import *
+from constants import *
 
 
 class DATA:
