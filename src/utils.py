@@ -5,7 +5,7 @@ import io
 import copy as copyy
 import json
 
-sys.path.append("../src")
+sys.path.append("./src")
 from constants import *
 from data import *
 
