@@ -1,4 +1,5 @@
-import math
+import math, sys
+sys.path.append("./src")
 
 class Num:
 

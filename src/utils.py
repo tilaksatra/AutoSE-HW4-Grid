@@ -1,4 +1,5 @@
-import math
+import math, sys
+sys.path.append("./src")
 import re
 import sys
 import io
