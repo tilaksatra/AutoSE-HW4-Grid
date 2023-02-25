@@ -1,12 +1,9 @@
 import copy
 import math
-import sys
-
-sys.path.append("./src")
+from utils import *
 from rows import *
 from cols import *
 from constants import *
-from utils import *
 
 
 class DATA:

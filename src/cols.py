@@ -1,6 +1,4 @@
 import re
-import sys
-sys.path.append("./src")
 from num import *
 from sym import *
 
