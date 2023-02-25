@@ -4,10 +4,10 @@ import sys
 import io
 import copy as copyy
 import json
-from data import DATA
 
-sys.path.append("./src")
+sys.path.append("../src")
 from constants import *
+from data import *
 
 seed = 937162211
 
