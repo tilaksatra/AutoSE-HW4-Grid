@@ -34,3 +34,8 @@ jobs:
         python ./test/testengine.py -g all
     - run: echo "🍏 This job's status is ${{ job.status }}."
     - run: echo "Test Workflow is successfully completed. 😊"
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.YOUR_SECRET_TOKEN }}
