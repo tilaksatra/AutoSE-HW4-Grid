@@ -2,8 +2,9 @@
 
  
  # `Lua to Python - AutoSE HW4 - Grid`
-
-![license](https://img.shields.io/github/license/tilaksatra/AutoSE-HW4-Grid)
+[![DOI](https://zenodo.org/badge/599732347.svg)](https://zenodo.org/badge/latestdoi/599732347)
+[![codecov](https://codecov.io/gh/tilaksatra/AutoSE-HW4-Grid/branch/main/graph/badge.svg?token=vzbUBjOv91)](https://codecov.io/gh/tilaksatra/AutoSE-HW4-Grid)
+![license](https://img.shields.io/github/license/tilaksatra/AutoSE-HW4-Grid)<br>
 ![Repo Size](https://img.shields.io/github/repo-size/tilaksatra/AutoSE-HW4-Grid)
 ![Issues](https://img.shields.io/github/issues-closed-raw/tilaksatra/AutoSE-HW4-Grid?color=yellow)
 ![Release](https://img.shields.io/github/v/release/tilaksatra/AutoSE-HW4-Grid?color=green)
@@ -13,8 +14,7 @@
 ![Pylint](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/pylint.yml?label=PyLint)
 ![Python Style Checker](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/style_checker.yml?label=Python%20Style%20Checker)
 ![Commit Activity](https://img.shields.io/github/commit-activity/w/tilaksatra/AutoSE-HW4-Grid?color=blue)
-[![DOI](https://zenodo.org/badge/599732347.svg)](https://zenodo.org/badge/latestdoi/599732347)
-[![codecov](https://codecov.io/gh/tilaksatra/AutoSE-HW4-Grid/branch/main/graph/badge.svg?token=vzbUBjOv91)](https://codecov.io/gh/tilaksatra/AutoSE-HW4-Grid)
+
 
 </div>
 This project translates a Lua application to Python application complete with CI/CD pipeline and demonstrates Test-Driven development. It is a homework repository for CSC 591 course. 
