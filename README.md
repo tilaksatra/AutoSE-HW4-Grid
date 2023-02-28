@@ -13,6 +13,7 @@
 ![Pylint](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/pylint.yml?label=PyLint)
 ![Python Style Checker](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/style_checker.yml?label=Python%20Style%20Checker)
 ![Commit Activity](https://img.shields.io/github/commit-activity/w/tilaksatra/AutoSE-HW4-Grid?color=blue)
+[![DOI](https://zenodo.org/badge/599732347.svg)](https://zenodo.org/badge/latestdoi/599732347)
 
 </div>
 This project translates a Lua application to Python application complete with CI/CD pipeline and demonstrates Test-Driven development. It is a homework repository for CSC 591 course. 
