@@ -1,0 +1,212 @@
+--
+{'dump': False, 'file': '../etc/data/repgrid_3.csv', 'go': 'all', 'help': False, 'p': 2, 'seed': 937162211}
+✅ pass: the
+--
+b4 {'a': 1, 'b': {'c': 2, 'd': [3]}}
+after {'a': 1, 'b': {'c': 2, 'd': [10000]}}
+✅ pass: copy
+--
+✅ pass: num
+--
+✅ pass: sym
+--
+{'a': 'Num', 'at': 0, 'hi': inf, 'id': 1562734856608, 'lo': -inf, 'm2': 22.1, 'mu': 3.7, 'n': 10, 'txt': 'Num6', 'w': 1}
+{'a': 'Sym', 'at': 1, 'has': {}, 'id': 1562734857232, 'mode': None, 'most': 0, 'n': 0, 'txt': 'thingX'}
+{'a': 'Row', 'cells': [4, 3, 2, 4, 4, 4, 'ChildrensBook:MatureBook'], 'id': 1562734856464}
+{'a': 'Row', 'cells': [3, 3, 4, 3, 3, 2, 'ShortBook:LongBook'], 'id': 1562734686608}
+{'a': 'Row', 'cells': [5, 5, 4, 4, 4, 3, 'LowRated:HighRated'], 'id': 1562734686704}
+{'a': 'Row', 'cells': [4, 2, 4, 3, 5, 1, 'Non-Biography:Biography'], 'id': 1562734685792}
+{'a': 'Row', 'cells': [5, 5, 3, 3, 4, 4, 'Fiction:Non-Fiction'], 'id': 1562734689584}
+{'a': 'Row', 'cells': [5, 5, 1, 2, 5, 3, 'LightWeight:Dark'], 'id': 1562734685696}
+{'a': 'Row', 'cells': [1, 5, 5, 1, 5, 1, 'Non-Series:Series'], 'id': 1562734689776}
+{'a': 'Row', 'cells': [4, 5, 3, 5, 5, 4, 'Historical:Non-Historical'], 'id': 1562734689872}
+{'a': 'Row', 'cells': [1, 2, 4, 1, 5, 1, 'OnlineCopy:PhysicalCopy'], 'id': 1562734689920}
+{'a': 'Row', 'cells': [5, 5, 4, 3, 4, 3, 'Old:Newly Published'], 'id': 1562734687520}
+✅ pass: repcols
+--
+{'cells': [4, 3, 5, 4, 5, 5, 1, 4, 1, 5, 'Indian Killer']}
+{'cells': [3, 3, 5, 2, 5, 5, 5, 5, 2, 5, 'Kane & Abel']}
+{'cells': [2, 4, 4, 4, 3, 1, 5, 3, 4, 4, 'Farenhiet 451']}
+{'cells': [4, 3, 4, 3, 3, 2, 1, 5, 1, 3, 'Two States']}
+{'cells': [4, 3, 4, 5, 4, 5, 5, 5, 5, 4, 'Panchtantra']}
+{'cells': [4, 2, 3, 1, 4, 3, 1, 4, 1, 3, 'Rich Dad Poor Dad']}
+{'a': 'Num', 'at': 0, 'hi': inf, 'id': 1562734688720, 'lo': -inf, 'm2': 3.5, 'mu': 3.5, 'n': 6, 'txt': 'ChildrensBook:MatureBook', 'w': 1}
+{'a': 'Num', 'at': 1, 'hi': inf, 'id': 1562734688960, 'lo': -inf, 'm2': 2.0, 'mu': 3.0, 'n': 6, 'txt': 'ShortBook:LongBook', 'w': 1}
+{'a': 'Num', 'at': 2, 'hi': inf, 'id': 1562734688816, 'lo': -inf, 'm2': 2.833333333333335, 'mu': 4.166666666666667, 'n': 6, 'txt': 'LowRated:HighRated', 'w': 1}
+{'a': 'Num', 'at': 3, 'hi': inf, 'id': 1562734687232, 'lo': -inf, 'm2': 10.833333333333334, 'mu': 3.166666666666667, 'n': 6, 'txt': 'Non-Biography:Biography', 'w': 1}
+{'a': 'Num', 'at': 4, 'hi': inf, 'id': 1562734856272, 'lo': -inf, 'm2': 3.999999999999999, 'mu': 4.0, 'n': 6, 'txt': 'Fiction:Non-Fiction', 'w': 1}
+{'a': 'Num', 'at': 5, 'hi': inf, 'id': 1562734857232, 'lo': -inf, 'm2': 15.500000000000002, 'mu': 3.5, 'n': 6, 'txt': 'LightWeight:Dark', 'w': 1}
+{'a': 'Num', 'at': 6, 'hi': inf, 'id': 1562734856608, 'lo': -inf, 'm2': 24.0, 'mu': 3.0, 'n': 6, 'txt': 'Non-Series:Series', 'w': 1}
+{'a': 'Num', 'at': 7, 'hi': inf, 'id': 1562734856512, 'lo': -inf, 'm2': 3.3333333333333335, 'mu': 4.333333333333334, 'n': 6, 'txt': 'Historical:Non-Historical', 'w': 1}
+{'a': 'Num', 'at': 8, 'hi': inf, 'id': 1562735910080, 'lo': -inf, 'm2': 15.333333333333332, 'mu': 2.3333333333333335, 'n': 6, 'txt': 'OnlineCopy:PhysicalCopy', 'w': 1}
+{'a': 'Num', 'at': 9, 'hi': inf, 'id': 1562735911136, 'lo': -inf, 'm2': 4.000000000000001, 'mu': 4.0, 'n': 6, 'txt': 'Old:Newly Published', 'w': 1}
+{'a': 'Sym', 'at': 10, 'has': {}, 'id': 1562735911088, 'mode': None, 'most': 0, 'n': 0, 'txt': 'thingX'}
+{'a': 'Row', 'cells': [4, 3, 5, 4, 5, 5, 1, 4, 1, 5, 'Indian Killer'], 'id': 1562734686848}
+{'a': 'Row', 'cells': [3, 3, 5, 2, 5, 5, 5, 5, 2, 5, 'Kane & Abel'], 'id': 1562735910992}
+{'a': 'Row', 'cells': [2, 4, 4, 4, 3, 1, 5, 3, 4, 4, 'Farenhiet 451'], 'id': 1562735910944}
+{'a': 'Row', 'cells': [4, 3, 4, 3, 3, 2, 1, 5, 1, 3, 'Two States'], 'id': 1562735910800}
+{'a': 'Row', 'cells': [4, 3, 4, 5, 4, 5, 5, 5, 5, 4, 'Panchtantra'], 'id': 1562735911472}
+{'a': 'Row', 'cells': [4, 2, 3, 1, 4, 3, 1, 4, 1, 3, 'Rich Dad Poor Dad'], 'id': 1562735910272}
+✅ pass: reprows
+--
+ 10
+{}
+|.. 10
+
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+{}
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+
+|..|..|..|.. 10
+{}
+|..|..|..|.. 10
+{}
+|.. 10
+
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+{}
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+
+|..|..|..|.. 10
+{}
+|..|..|..|.. 10
+{}
+✅ pass: synonyms
+--
+{'cells': [4, 3, 5, 4, 5, 5, 1, 4, 1, 5, 'Indian Killer']}
+{'cells': [3, 3, 5, 2, 5, 5, 5, 5, 2, 5, 'Kane & Abel']}
+{'cells': [2, 4, 4, 4, 3, 1, 5, 3, 4, 4, 'Farenhiet 451']}
+{'cells': [4, 3, 4, 3, 3, 2, 1, 5, 1, 3, 'Two States']}
+{'cells': [4, 3, 4, 5, 4, 5, 5, 5, 5, 4, 'Panchtantra']}
+{'cells': [4, 2, 3, 1, 4, 3, 1, 4, 1, 3, 'Rich Dad Poor Dad']}
+ 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|.. 6
+
+|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|.. 6
+
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|.. 6
+
+|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|.. 6
+
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+✅ pass: prototypes
+--
+{'cells': [4, 3, 5, 4, 5, 5, 1, 4, 1, 5, 'Indian Killer']}
+{'cells': [3, 3, 5, 2, 5, 5, 5, 5, 2, 5, 'Kane & Abel']}
+{'cells': [2, 4, 4, 4, 3, 1, 5, 3, 4, 4, 'Farenhiet 451']}
+{'cells': [4, 3, 4, 3, 3, 2, 1, 5, 1, 3, 'Two States']}
+{'cells': [4, 3, 4, 5, 4, 5, 5, 5, 5, 4, 'Panchtantra']}
+{'cells': [4, 2, 3, 1, 4, 3, 1, 4, 1, 3, 'Rich Dad Poor Dad']}
+
+A Indian Killer
+B Kane & Abel
+C Farenhiet 451
+D Two States
+E Panchtantra
+F Rich Dad Poor Dad
+
+✅ pass: position
+--
+{'cells': [4, 3, 5, 4, 5, 5, 1, 4, 1, 5, 'Indian Killer']}
+{'cells': [3, 3, 5, 2, 5, 5, 5, 5, 2, 5, 'Kane & Abel']}
+{'cells': [2, 4, 4, 4, 3, 1, 5, 3, 4, 4, 'Farenhiet 451']}
+{'cells': [4, 3, 4, 3, 3, 2, 1, 5, 1, 3, 'Two States']}
+{'cells': [4, 3, 4, 5, 4, 5, 5, 5, 5, 4, 'Panchtantra']}
+{'cells': [4, 2, 3, 1, 4, 3, 1, 4, 1, 3, 'Rich Dad Poor Dad']}
+ 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|.. 6
+
+|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|.. 6
+
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|.. 6
+
+|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|.. 6
+
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+|..|..|.. 6
+{'Non-Biography:Biography': 3.2, 'Fiction:Non-Fiction': 4.0, 'Non-Series:Series': 3.0, 'Historical:Non-Historical': 4.3}
+ 10
+{}
+|.. 10
+
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+{}
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+
+|..|..|..|.. 10
+{}
+|..|..|..|.. 10
+{}
+|.. 10
+
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+{}
+|..|.. 10
+
+|..|..|.. 10
+{}
+|..|..|.. 10
+
+|..|..|..|.. 10
+{}
+|..|..|..|.. 10
+{}
+
+A Indian Killer
+B Kane & Abel
+C Farenhiet 451
+D Two States
+E Panchtantra
+F Rich Dad Poor Dad
+
+✅ pass: every
