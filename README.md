@@ -5,6 +5,7 @@
 [![DOI](https://zenodo.org/badge/599732347.svg)](https://zenodo.org/badge/latestdoi/599732347)
 [![codecov](https://codecov.io/gh/tilaksatra/AutoSE-HW4-Grid/branch/main/graph/badge.svg?token=vzbUBjOv91)](https://codecov.io/gh/tilaksatra/AutoSE-HW4-Grid)
 ![license](https://img.shields.io/github/license/tilaksatra/AutoSE-HW4-Grid)<br>
+![Test Cases](https://img.shields.io/github/actions/workflow/status/tilaksatra/AutoSE-HW4-Grid/tests.yml?label=Test%20Cases)
 ![Repo Size](https://img.shields.io/github/repo-size/tilaksatra/AutoSE-HW4-Grid)
 ![Issues](https://img.shields.io/github/issues-closed-raw/tilaksatra/AutoSE-HW4-Grid?color=yellow)
 ![Release](https://img.shields.io/github/v/release/tilaksatra/AutoSE-HW4-Grid?color=green)
